@@ -1,0 +1,23 @@
+[
+  {
+    "name": "FlightTicketMCP",
+    "full_name": "xiaonieli7/FlightTicketMCP",
+    "html_url": "https://github.com/xiaonieli7/FlightTicketMCP",
+    "description": "Demo repository about Find a repo that searchs flight tickets daily or something similar to that",
+    "stars": 43
+  },
+  {
+    "name": "findtrip",
+    "full_name": "fankcoder/findtrip",
+    "html_url": "https://github.com/fankcoder/findtrip",
+    "description": "Another sample match for Find a repo that searchs flight tickets daily or something similar to that",
+    "stars": 486
+  },
+  {
+    "name": "flight-scraper",
+    "full_name": "yang/flight-scraper",
+    "html_url": "https://github.com/yang/flight-scraper",
+    "description": "A sample flight-related repository for Find a repo that searchs flight tickets daily or something similar to that",
+    "stars": 32
+  }
+]
