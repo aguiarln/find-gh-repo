@@ -1,24 +1,30 @@
 # GitHub MCP Repository Search
 
-This mini-project provides a simple CLI to search GitHub repositories using a GitHub MCP server.
+This mini-project helps you describe the kind of repository you want to find in [search_request.md](search_request.md), then run the Python script to search GitHub repositories.
 
-## Quick start
+## How to use it
+
+1. Open [search_request.md](search_request.md) and write what you want to find.
+2. From the project root, run:
+   ```bash
+   python search_from_markdown.py
+   ```
+3. The script reads your request from [search_request.md](search_request.md), runs the repository search, and saves the results to [results.json](results.json).
+
+## Setup
 
 1. Create and activate a virtual environment.
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run a demo search:
-   ```bash
-   python -m github_repo_search.cli --query "fastapi auth" --demo
-   ```
-4. To use a real MCP server, provide a command that starts it:
-   ```bash
-   python -m github_repo_search.cli --query "python data science" --server-command "npx" --server-args "-y @modelcontextprotocol/server-github"
-   ```
 
-## Notes
+## Optional arguments
 
-- The CLI supports optional language and topic filters.
-- If no MCP server is reachable, it falls back to a simple demo dataset.
+You can add filters or change the output file when running the script:
+
+- `--language "python"` to filter by language
+- `--topic "ai"` to filter by topic
+- `--limit 10` to change the number of results
+- `--demo` to use demo data instead of trying the live MCP server
+- `--output my_results.json` to save results to a different file
